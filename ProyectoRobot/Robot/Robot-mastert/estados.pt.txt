@@ -1,0 +1,6 @@
+#https://pyautogui.readthedocs.io/en/latest/screenshot.html#the-locate-functions
+import pyautogui
+
+#tomar captura de pantalla
+#im1 = pyautogui.screenshot('hola.png')
+img2 = pyautogui.screenshot("capturita.png", [20,50])

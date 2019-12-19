@@ -1,0 +1,33 @@
+#Lee un archivo desde un .txt y separa lo generado para sacar distintas "palabras"
+#Antonio Reyes Guerrero, IBM Student. Noviembre 2019
+def separa(n,Iden):
+    """Recibe una lista con un identificador de codigo, lo evalua con el archivo de codigos y de ser 
+    correcto, usa ese identificador para separar los codigos del archivo y poder ser utilizados posteriormente.
+    Parámetros: f (archivo),ID[](identificador)
+    Excepciones:
+    ValueError -- Si no tiene una lista dentro
+    """
+    
+    '''-----------------------------'''
+    categoria = n.split(ID[0])
+    print(categoria)
+
+
+    
+print('Numero de ID')
+id = int(input())
+ID = [None]*id
+print(id)
+print("Introducir identificadores todos juntos, uno por uno")
+for i in range(1,id+1):
+    ID[i-1] = input(" ")
+print(ID)
+
+f = open('pruebaPart.txt','r')
+
+m = f.read()
+
+
+separa(m,ID)
+
+
